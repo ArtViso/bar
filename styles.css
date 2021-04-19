@@ -164,6 +164,24 @@ body {
   bottom: 15%;
   left: 50px;
 }
+.inner-right-bottom h3{
+  margin: 0;
+  font: 20px/32px D-DIN-Medium,Arial,Verdana,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  opacity: inherit;
+  margin: auto auto 10px;
+  color:white;
+}
+.inner-right-bottom h2{
+  margin: 0;
+  font: 46px/50px D-DIN-Bold,Arial,Verdana,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color:white;
+}
 .inner-left-bottom h3{
   margin: 0;
   font: 20px/32px D-DIN-Medium,Arial,Verdana,sans-serif;
@@ -208,7 +226,7 @@ body {
 }
 
 .fonimg2{
-  position	: relative;
+  position: relative;
   height: 100vh;
   width: 100%;
   background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ),url(./img/fon2.jpg);

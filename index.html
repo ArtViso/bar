@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -30,19 +31,19 @@
       <video src="./video/space2.mp4" type="video/mp4" autoplay loop muted playsinline></video>
       <div class="effect"></div>
       <div class="video_bg__content">
-        <h1>This is our future</h1>
+        <h1 class="wow animate__animated animate__fadeInDownBig">This is our future</h1>
       </div>
     </div>
     <div class="content">
       <div class="fonimg">
-        <div class="inner-left-bottom">
+        <div class="inner-left-bottom wow animate__animated animate__fadeInLeft">
           <h3 class="shadowed">Upcoming Launch</h3>
           <h2 class="shadowed">Crew-2 Mission</h2>
           <button class="btn btn1">LEARN MORE</button>
         </div>
       </div>
       <div class="fonimg2">
-        <div class="inner-left-bottom">
+        <div class="inner-left-bottom wow animate__animated animate__fadeInLeft">
           <h2 class="shadowed">STARSHIP TO </br> LAND NASA </br> ASTRONAUTS ON </br> THE MOON</h2>
           <button class="btn btn1">LEARN MORE</button>
         </div>
@@ -50,7 +51,7 @@
       <div class="video-bg2">
         <video src="./video/space.webm" type="video/mp4" autoplay loop muted playsinline></video>
         <div class="effect"></div>
-        <div class="video_bg__content2">
+        <div class="video_bg__content2 wow animate__animated animate__fadeInUpBig">
           <h1>DRAGON DOCKING SIMULATOR</h1>
           <p>Dragon is designed to autonomously dock and undock with the International Space Station. However, the crew
             can take manual control of the spacecraft if necessary.</p>
@@ -69,6 +70,10 @@
     </section>
   </footer>
   <script src="script.js"></script>
+  <script src="wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
