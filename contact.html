@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">SPACE_VA</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#">CREW-2 MISSION</a></li>
+            <li><a href="#">THE MOON</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </header>
+    <main>
+        <a name="top"></a>
+        <div class="video-bg">
+            <video src="../video/space.webm" type="video/mp4" autoplay loop muted playsinline></video>
+            <div class="effect"></div>
+            <div class="video_bg__content">
+                <h1 class="wow animate__animated animate__fadeInDownBig">OUR CONTACTS</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div id="map"></div>
+                </div>
+                <div class="column">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."
+                            style="height:170px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="footer">
+            <h1 class="logo logoh1"><a href="#top">SPACE_VA</a></h1>
+            <h1><a href="https://twitter.com/" target="_blank">twitter</a></h1>
+            <h1><a href="https://youtube.com/" target="_blank">youtube</a></h1>
+            <h1><a href="https://instagram.com/" target="_blank">instagram</a></h1>
+            <h1><a href="https://www.flickr.com/photos/spacex/with/50618463487/" target="_blank">flickr</a></h1>
+        </section>
+    </footer>
+    <script src="../js/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: {
+                    lat: 28.5889505,
+                    lng: -80.6615792
+                },
+            });
+            setMarkers(map);
+        }
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI_F5RO2SlHo4lK3fc1HVmBBvQ5n4HnqQ&callback=initMap&libraries=&v=weekly"
+        async>
+    </script>
+</body>
+
+</html>
