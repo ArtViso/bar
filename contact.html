@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CONTACTS</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -18,10 +20,9 @@
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
-            <li><a href="#">CREW-2 MISSION</a></li>
-            <li><a href="#">THE MOON</a></li>
+            <li><a href="mission.html">CREW-2 MISSION</a></li>
+            <li><a href="moon.html">THE MOON</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="#">ABOUT</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
     </header>
@@ -50,6 +51,7 @@
                             <option value="australia">Australia</option>
                             <option value="canada">Canada</option>
                             <option value="usa">USA</option>
+                            <option value="usa">UKRAINE</option>
                         </select>
                         <label for="subject">Subject</label>
                         <textarea id="subject" name="subject" placeholder="Write something.."
@@ -58,6 +60,12 @@
                     </form>
                 </div>
             </div>
+        </div>
+        <div class="autoplay">
+            <div><img src="./img/l1.png" alt=""></div>
+            <div><img src="./img/l2.png" alt=""></div>
+            <div><img src="./img/l3.png" alt=""></div>
+            <div><img src="./img/l4.png" alt=""></div>
         </div>
     </main>
     <footer>
@@ -69,8 +77,11 @@
             <h1><a href="https://www.flickr.com/photos/spacex/with/50618463487/" target="_blank">flickr</a></h1>
         </section>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script src="./js/script.js"></script>
     <script src="../js/wow.min.js"></script>
-
     <script>
         new WOW().init();
     </script>

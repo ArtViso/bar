@@ -1,0 +1,59 @@
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.grid-item {
+    color:white;
+}
+.c1, .c2{
+    padding: 5% 10% 0% 10%;
+}
+.box{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.box1{
+    width: 100%;
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+}
+.astronauts{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    color:white
+}
+.astronauts_grid_item img{
+    width: 250px;
+}
+.astronauts_grid_item{
+    text-align: center;
+    font-size: 15px;
+}
+.countdown{
+    color:white;
+    padding: 2% 5% 2% 5%;
+}
+.countdown_time{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 0.4fr));
+}
+.countdown_time_colum{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, 0.4fr));
+    border-bottom: 1px solid rgb(77, 77, 77);
+    font-size: 15px;
+}
+.content_dragon{
+    max-width: 100%;
+    text-align: center;
+}
+.content_dragon_img img{
+    max-width: 100%;
+    height: auto;
+}

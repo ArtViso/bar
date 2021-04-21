@@ -48,9 +48,11 @@ input[type=submit]:hover {
     clear: both;
 }
 
-@media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
+.autoplay{
+    max-width: 700px;
+    margin:20px auto;
+}
+.autoplay img{
+    width: 100%;
+    height: auto;
 }
